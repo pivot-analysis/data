@@ -35,7 +35,11 @@ For each event (row), these are the fields (columns):
 | **Y**             | If available, the 10 units per foot Y coordinate of the action (this is the scale used by stats.nba.com) |
 | **Distance**[^3]  | The hypotenuse of the X, Y calculation from the rim used for approximating shot distance (in feet) |
 
-### Locations
+### Available Data
+* Duke MBB 2018
+
+### Other Notes
+##### Locations
 
 Only one game has locations in the initial Duke dataset, which is their 2018 NCAA tournament game against Michigan State. These locations should be used as approximations only due to their provenance.
 
