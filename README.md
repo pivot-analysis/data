@@ -9,8 +9,8 @@ For each event (row), these are the fields (columns):
 
 | Field             | Description                                                  |
 | ----------------- | ------------------------------------------------------------ |
-| **Actor**         | The normalized[^1] name of the player that performed the action. |
-| **Roster**        | The name and key[^2] of the roster to which the actor belongs. |
+| **Actor**         | The normalized<sup>1</sup> name of the player that performed the action. |
+| **Roster**        | The name and key<sup>2</sup> of the roster to which the actor belongs. |
 | **Order**         | The order the event was collected in.                        |
 | **STS**           | "Same Time Sort", which is how we sort events so that fouls are attributed to the correct players even when several events occur at the same clock. |
 | **Period**        | Period/quarter of the game                                   |
@@ -33,10 +33,11 @@ For each event (row), these are the fields (columns):
 | **Normal**        | If none of the previous flags apply, it's _Normal_           |
 | **X**             | If available, the 10 units per foot X coordinate of the action (this is the scale used by stats.nba.com) |
 | **Y**             | If available, the 10 units per foot Y coordinate of the action (this is the scale used by stats.nba.com) |
-| **Distance**[^3]  | The hypotenuse of the X, Y calculation from the rim used for approximating shot distance (in feet) |
+| **Distance**<sup>3</sup>  | The hypotenuse of the X, Y calculation from the rim used for approximating shot distance (in feet) |
 
 ### Available Data
 * Duke MBB 2018
+* NBA Opening Night 2019-20 (w/ Locations)
 
 ### Other Notes
 ##### Locations
@@ -49,7 +50,7 @@ For more information, please hit us up at contact@pivotanalysis.com.
 
 
 
-[^1]: Normalized names are those that remove special characters in an effort to make them as easy to match as possible.
-[^2]: Keys are created for both rosters and lineups that are the first three letters of the normalized name plus the jersey number for use in tabular formats like Excel.
-[^3]: Not all events have locations and not all games have locations. When available for NCAA games these should be considered approximate. If available for NBA games, these should be 1:1.
+<sup>1</sup> Normalized names are those that remove special characters in an effort to make them as easy to match as possible.  
+<sup>2</sup> Keys are created for both rosters and lineups that are the first three letters of the normalized name plus the jersey number for use in tabular formats like Excel.  
+<sup>3</sup> Not all events have locations and not all games have locations. When available for NCAA games these should be considered approximate. If available for NBA games, these should be 1:1.
 
